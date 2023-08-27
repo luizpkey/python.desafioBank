@@ -48,9 +48,7 @@ while True:
       except:
          print("Valor inválido")
          continue
-      if saque>500:
-         print("Limite de valor de saque excedido")
-      elif numero_saques >= LIMITE_SAQUES:
+      if numero_saques >= LIMITE_SAQUES:
          print("Você já efetuou seu limite de {} saques hoje".format(numero_saques))
       elif saque>0:
          if saque>(LIMITE_VALOR_SAQUE):
